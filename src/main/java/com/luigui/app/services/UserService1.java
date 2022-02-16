@@ -3,8 +3,8 @@ package com.luigui.app.services;
 import java.util.List;
 import java.util.Optional;
 
-import com.luigui.app.Repositories.UserRepository;
 import com.luigui.app.entities.User;
+import com.luigui.app.repositories.UserRepository;
 
 import org.apache.commons.logging.LogFactory;
 import org.apache.juli.logging.Log;

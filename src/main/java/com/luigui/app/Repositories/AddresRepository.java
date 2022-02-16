@@ -1,4 +1,4 @@
-package com.luigui.app.Repositories;
+package com.luigui.app.repositories;
 
 import com.luigui.app.entities.Address;
 

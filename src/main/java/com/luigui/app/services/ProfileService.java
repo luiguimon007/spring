@@ -2,10 +2,10 @@ package com.luigui.app.services;
 
 import java.util.Optional;
 
-import com.luigui.app.Repositories.ProfileRepository;
-import com.luigui.app.Repositories.UserRepository;
 import com.luigui.app.entities.Profile;
 import com.luigui.app.entities.User;
+import com.luigui.app.repositories.ProfileRepository;
+import com.luigui.app.repositories.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

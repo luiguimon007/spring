@@ -3,8 +3,8 @@ package com.luigui.app.services;
 import java.util.List;
 import java.util.Optional;
 
-import com.luigui.app.Repositories.RoleRepository;
 import com.luigui.app.entities.Role;
+import com.luigui.app.repositories.RoleRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

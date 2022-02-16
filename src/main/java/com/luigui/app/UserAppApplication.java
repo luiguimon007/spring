@@ -1,8 +1,8 @@
 package com.luigui.app;
 
 import com.github.javafaker.Faker;
-import com.luigui.app.Repositories.UserRepository;
 import com.luigui.app.entities.User;
+import com.luigui.app.repositories.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
