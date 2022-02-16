@@ -19,7 +19,7 @@ import com.luigui.app.models.User;
 import com.luigui.app.services.UserService;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/v1/users")
 public class UserController {
 	
 	@Autowired
