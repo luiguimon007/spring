@@ -16,7 +16,8 @@ public class SecurityJavaConfig extends WebSecurityConfigurerAdapter{
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception{
         //super.configure(auth);
-        auth.inMemoryAuthentication().withUser("admin").password(encoder().encode("password")).roles("Admin");
+        auth.inMemoryAuthentication().withUser("admin").password(encoder().encode("password")).roles("ADMIN")
+        .and().withUser("user").password(encoder().encode("password")).roles("USER");
     }
     @Bean
     public PasswordEncoder encoder() throws Exception{
@@ -25,7 +26,9 @@ public class SecurityJavaConfig extends WebSecurityConfigurerAdapter{
 
     @Override
     protected void configure(HttpSecurity http)throws Exception{
-        http.csrf().disable().authorizeRequests().antMatchers("/user/**").hasRole("ADMIN").and().httpBasic();
+        http.csrf().disable().authorizeRequests().antMatchers("/user/**").hasRole("ADMIN")
+        .antMatchers("/roles/**").permitAll().anyRequest().authenticated()
+        .and().httpBasic();
     }
     
 }
